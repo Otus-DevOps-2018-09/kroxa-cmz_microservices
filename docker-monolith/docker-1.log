@@ -1,0 +1,4 @@
+REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
+kroxa-cmz/ubuntu-tmp-file   latest              76657ad62fa4        19 seconds ago      116MB
+ubuntu                      16.04               a51debf7e1eb        4 weeks ago         116MB
+hello-world                 latest              4ab4c602aa5e        3 months ago        1.84kB
