@@ -1,6 +1,7 @@
 image: ruby:2.4.2 
 stages: 
- - test
+  - test
+  - review 
 variables: 
   DATABASE_URL: 'mongodb://mongo/user_posts'
 before_script: 
@@ -12,3 +13,10 @@ test_unit_job:
     - mongo:latest 
   script: 
     - ruby simpletest.rb 
+deploy_dev_job:
+  stage: review
+  script:
+    - echo 'Deploy'
+  environment:
+    name: dev
+    url: http://dev.example.com
